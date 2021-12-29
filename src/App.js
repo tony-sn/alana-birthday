@@ -1,14 +1,27 @@
-import './styles/App.css';
-import './scss/main.scss';
+import "./scss/main.scss"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+
+import Header from "./components/Header/Header"
+
+import Home from "./pages/Home"
+import MyAlbums from "./pages/MyAlbums"
+import Error404 from "./pages/Error404"
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1 className="text-xl text-white font-bold">Alana Birthday Party</h1>
-      </header>
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+
+          <Route exact path="/my-albums" component={MyAlbums} />
+
+          <Route path="*" component={Error404} />
+        </Switch>
+      </Router>
     </div>
   )
 }
 
-export default App;
+export default App

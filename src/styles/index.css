@@ -22,7 +22,3 @@ article {
 article:hover {
   box-shadow: var(--theme-boxShadow-hover);
 }
-
-.App {
-  text-align: center;
-}

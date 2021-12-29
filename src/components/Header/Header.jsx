@@ -1,19 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from "./Header.module.scss"
 import { Link } from 'react-router-dom'
-import {BiMenuAltRight} from 'react-icons/bi'
-import {AiOutlineClose} from 'react-icons/ai'
+
+import HeartIcon from '../HeartIcon/HeartIcon'
+import AlanaLogo from '../../assets/img/AlanaNguyenLogo.png'
+
+
+// import {BiMenuAltRight} from 'react-icons/bi'
+// import {AiOutlineClose} from 'react-icons/ai'
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(true);
+
+  function handleMenuToggler () {
+    setMenuOpen(!menuOpen)
+  }
+
   return (
-    <header className={classes.header}>
+    <>
+      <Link to="/" className={classes.balloon}>
+        🎂🎈🎁🌟
+        <img className="alana__img" src={AlanaLogo} alt="Alana Logo"/>
+      </Link>
+
+     <header className={classes.header}>
       <div className={classes.header__content}>
-        <Link to="/">
-          <h2>Alana Logo</h2>
-          {/* <img src={AlanaLogo} alt="Alana Logo"/> */}
-        </Link>
-      </div>
-      <nav className={classes.header__content__nav}>
+
+      <nav className={`${classes.header__content__nav} ${menuOpen? classes.isMenu : ""}`}>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -24,10 +37,17 @@ function Header() {
         </ul>
       </nav>
       <div className={classes.header__content__toggle}>
-        <BiMenuAltRight/>
+        {/* {menuOpen ? <BiMenuAltRight onClick={handleMenuToggler}/> : <AiOutlineClose onClick={handleMenuToggler}/>} */}
+
+        < HeartIcon handleClick={handleMenuToggler} />
 
       </div>
+      </div>
+
     </header>
+
+    </>
+
   )
 }
 

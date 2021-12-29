@@ -1,0 +1,32 @@
+.wrapper {
+  height: 100vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  position: relative;
+}
+
+.heart {
+  fill: #fff;
+}
+
+.line {
+  fill: none;
+  stroke: #f40082;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+  stroke-dasharray: 4.76 9;
+  stroke-dashoffset: 6;
+}
+
+.radiate {
+  .heart{
+    fill: #f40082;
+  }
+  .line {
+    stroke-dashoffset: -8;
+    transition: stroke-dashoffset 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
