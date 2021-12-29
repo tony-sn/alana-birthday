@@ -1,7 +1,12 @@
+@import "./mixin";
+
 // Colors
 $color-white: #fff;
+$color-white-1: rgb(255,255,255);
 $color-black: #1f2d3d;
 $color-dark: rgb(29,29,29);
+$color-secondary: #592DEA;
+$bg-color: linear-gradient(64deg, #FF16D1, #592DEA);
 
 // Spacing
 $spacing-md: 16px;
@@ -9,18 +14,28 @@ $spacing-lg: 32px;
 
 // Theme
 $theme-color-primary: #ff16D1;
+$theme-color-lightPink: #e040c0;
+$theme-color-secondary: #592DEA;
 $theme-boxShadow-normal: rgba(0, 0, 0, 0.08) 0px 0px 2px 0px, rgba(0, 0, 0, 0.16) 0px 4px 8px 0px;
 $theme-boxShadow-hover: rgba(0, 0, 0, 0.08) 0px 0px 2px 0px, rgba(0, 0, 0, 0.16) 0px 12px 12px 0px;
 
 // Line height
 $lineHeight-0: 1.6;
 
-// Font family:
+// Font family
 $font-family: 'Lato', sans-serif;
+
+// Font size
+$fontSize-0: 1rem;
+$fontSize-1: 2rem;
+
+// Font weight
+$fontWeight-light: light;
+$fontWeight-bold: bold;
 
 // Border radius
 $borderRadius-0: 4px;
-$borderRadiu-1: 12px;
+$borderRadius-1: 12px;
 
 // Header Height:
 $headerHeight: 100px;

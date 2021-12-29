@@ -3,6 +3,12 @@
 //Helpers
 @import "./Helpers/variables";
 
+//Components
+@import "./Components/image";
+
 //Base
 @import "./Base/reset";
 @import "./Base/customise";
+
+//Pages
+@import "./Pages/home";
