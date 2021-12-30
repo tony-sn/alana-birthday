@@ -36,7 +36,7 @@ const FlipCardFront = ({theme, params}) => {
             }
             <p className="card-text text-sm md:text-base">It would be very nice of you to come to</p>
             <p className="card-text text-sm md:text-base font-bold">Alana's Birthday Party</p>
-            <p className="card-text text-sm md:text-base">Date: <span>02/01/22</span> &nbsp; Time: <span>11:45 AM</span></p>
+            <p className="card-text text-sm md:text-base">Date: <span>02/01/22</span> &nbsp; Time: <span>11:00 AM</span></p>
             <p className="card-text text-sm md:text-base">Place: <span>Chipmunks Playland & Cafe</span></p>
             <div className="card-text text-center text-sm italic">
               <p>Don't forget to bring your socks</p>
