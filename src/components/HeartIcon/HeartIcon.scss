@@ -27,6 +27,7 @@
   }
   .line {
     stroke-dashoffset: -8;
-    transition: stroke-dashoffset 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+    // default: 0.75s
+    transition: stroke-dashoffset 1s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

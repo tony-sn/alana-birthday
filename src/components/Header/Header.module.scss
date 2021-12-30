@@ -14,16 +14,17 @@
   padding-bottom: 4px;
   color: rgb(249, 250, 252);
 
-@include breakpoint(sm){
-  position: fixed;
-  left: 0;
-  top: 0;
-  writing-mode: tb-rl;
-  font-size: 48px;
-}
-@include breakpoint(lg) {
-  font-size: 64px;
-}
+  @include breakpoint(sm){
+    // 512px
+    position: fixed;
+    left: 0;
+    top: 0;
+    writing-mode: tb-rl;
+    font-size: 48px;
+  }
+  @include breakpoint(lg) {
+    font-size: 64px;
+  }
 }
 
 .header {
