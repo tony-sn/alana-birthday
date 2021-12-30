@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom'
 import HeartIcon from '../HeartIcon/HeartIcon'
 import AlanaLogo from '../../assets/img/AlanaNguyenLogo.png'
 
-
-// import {BiMenuAltRight} from 'react-icons/bi'
-// import {AiOutlineClose} from 'react-icons/ai'
-
 function Header() {
   const [menuOpen, setMenuOpen] = useState(true);
 
