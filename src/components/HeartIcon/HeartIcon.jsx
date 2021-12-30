@@ -27,7 +27,7 @@ const HeartIcon = ({handleClick}) => {
     handleClick()
   }
 
-  useTimeout(handleHeartIcon, 800)
+  useTimeout(handleHeartIcon, 750)
 
   return (
     <div className="wrapper">

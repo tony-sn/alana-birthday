@@ -13,7 +13,10 @@ function titleCase(str) {
 const FlipCardFront = ({theme, params}) => {
   const guest = guests.find(guest => {
 
-    if (guest.name.replaceAll(" ", "").toLowerCase() === params?.toLowerCase()) return guest.parents
+    if (guest.name.replaceAll(" ", "").toLowerCase() === params?.toLowerCase()) {
+      return guest.parents
+    }
+    return undefined;
   })
 
   return (
@@ -21,10 +24,10 @@ const FlipCardFront = ({theme, params}) => {
           <img className="card-img-top" src={theme} alt="Fairy Theme"/>
           <div className="card-body">
             {
-              params != undefined
+              guest !== undefined
               ?
               (
-                <h5 className="card-title sm:text-sm font-bold">Dear {titleCase(guest.name)} and {guest.parents}</h5>
+                <h5 className="card-title sm:text-sm font-bold">Dear {titleCase(guest?.name)} and {guest?.parents}</h5>
               )
               :
               (
