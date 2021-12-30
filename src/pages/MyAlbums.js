@@ -2,8 +2,10 @@ import React from 'react'
 
 const MyAlbums = () => {
   return (
-    <div>
-      <h1 className="text-xl text-white font-bold">My Albums</h1>
+    <div className='myAlbums'>
+      <h1 className="text-xl text-white font-bold text-center">My Albums</h1>
+      <br/>
+      <h2 className="text-lg text-white font-bold text-center">Coming Soon!</h2>
     </div>
   )
 }

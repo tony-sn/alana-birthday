@@ -6,7 +6,7 @@ const Home = () => {
     <div className="home">
       <h1 className="text-xl text-white font-bold text-center">💖 Happy birthday, <span style={{color: "rgb(255, 22, 209)"}}>Alana</span> ! 🎉</h1>
       <FlipCard />
-      <h2 className="text-lg text-white font-bold text-center">Can't wait to see you there.</h2>
+      <h3 className="text-base text-white text-center mt-9">Made by Alana's dad with love ❤️</h3>
     </div>
   )
 }

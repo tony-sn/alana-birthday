@@ -9,9 +9,6 @@
     width: 360px;
     height: 620px;
   }
-  @include breakpoint(lg) {
-    width: 400px;
-  }
 
   .flip-card-inner {
     transform-style: preserve-3d;

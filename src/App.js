@@ -7,13 +7,17 @@ import Home from "./pages/Home"
 import MyAlbums from "./pages/MyAlbums"
 import Error404 from "./pages/Error404"
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Router>
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+
+          <Route exact path="/birthday/:name">
+            <Home {...props}/>
+          </Route>
 
           <Route exact path="/my-albums" component={MyAlbums} />
 
