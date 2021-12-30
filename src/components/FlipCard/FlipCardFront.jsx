@@ -21,10 +21,13 @@ const FlipCardFront = ({theme, params}) => {
           <img className="card-img-top" src={theme} alt="Fairy Theme"/>
           <div className="card-body">
             {
-              params != undefined ? (
+              params != undefined
+              ?
+              (
                 <h5 className="card-title sm:text-sm font-bold">Dear {titleCase(guest.name)} and {guest.parents}</h5>
               )
-              : (
+              :
+              (
                 <h5 className="card-title sm:text-sm font-bold">Dear friend, </h5>
               )
             }
