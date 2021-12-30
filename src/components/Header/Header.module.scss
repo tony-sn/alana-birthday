@@ -14,7 +14,7 @@
   padding-bottom: 4px;
   color: rgb(249, 250, 252);
 
-  @include breakpoint(sm){
+  @include breakpoint(md){
     // 512px
     position: fixed;
     left: 0;

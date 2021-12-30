@@ -6,9 +6,16 @@
     }
   }
 
-  @if $point == sm {
+  @if $point == md {
     // 512px
     @media (min-width: 32em) {
+      @content;
+    }
+  }
+
+  @if $point == sm {
+    // 440px
+    @media (min-width: 27.5em) {
       @content;
     }
   }

@@ -5,8 +5,8 @@ module.exports = {
       'sm': '440px',
       // => @media (min-width: 440px) { ... }
 
-      'md': '547px',
-      // => @media (min-width: 547px) { ... }
+      'md': '512px',
+      // => @media (min-width: 512px) { ... }
 
       'lg': '768px',
       // => @media (min-width: 768px) { ... }
