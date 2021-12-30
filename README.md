@@ -4,7 +4,7 @@ This simple web app is built to create Alana's birthday invitation, and/or some 
 <p>&nbsp;
 </p>
 
-## Technologies that I used:
+## Technologies that I used/will use:
 - SCSS
 - Tailwind CSS
 - React Router Dom
