@@ -19,7 +19,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    writing-mode: tb-rl;
+    writing-mode: vertical-rl;
     font-size: 48px;
   }
   @include breakpoint(lg) {
